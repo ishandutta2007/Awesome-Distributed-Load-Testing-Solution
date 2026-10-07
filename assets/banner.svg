@@ -1,78 +1,113 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0f172a"/>
       <stop offset="50%" stop-color="#1e1b4b"/>
       <stop offset="100%" stop-color="#311042"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8"/>
       <stop offset="50%" stop-color="#818cf8"/>
       <stop offset="100%" stop-color="#c084fc"/>
     </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+
+    <linearGradient id="pulseGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glowing effect for text -->
+    <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="320" fill="url(#bg)" rx="16"/>
+  <!-- Main Background Panel -->
+  <rect width="1200" height="320" fill="url(#bgGradient)" rx="16"/>
 
-  <!-- Dynamic / Animated Waves and Traffic Flow Background -->
-  <g opacity="0.25">
-    <path d="M 0,160 Q 300,80 600,160 T 1200,160" fill="none" stroke="#38bdf8" stroke-width="4">
-      <animate attributeName="d" dur="8s" repeatCount="indefinite"
-        values="M 0,160 Q 300,80 600,160 T 1200,160;
-                M 0,160 Q 300,240 600,160 T 1200,160;
-                M 0,160 Q 300,80 600,160 T 1200,160"/>
+  <!-- Dynamic / Animated Waves and Traffic Nodes Background -->
+  <g opacity="0.35">
+    <!-- Sine Wave 1 -->
+    <path d="M 0,160 Q 300,60 600,160 T 1200,160" fill="none" stroke="#38bdf8" stroke-width="3">
+      <animate attributeName="d" dur="7s" repeatCount="indefinite"
+        values="M 0,160 Q 300,60 600,160 T 1200,160;
+                M 0,160 Q 300,260 600,160 T 1200,160;
+                M 0,160 Q 300,60 600,160 T 1200,160"/>
     </path>
-    <path d="M 0,200 Q 300,260 600,180 T 1200,220" fill="none" stroke="#c084fc" stroke-width="3">
-      <animate attributeName="d" dur="6s" repeatCount="indefinite"
-        values="M 0,200 Q 300,260 600,180 T 1200,220;
-                M 0,200 Q 300,100 600,200 T 1200,180;
-                M 0,200 Q 300,260 600,180 T 1200,220"/>
+    
+    <!-- Sine Wave 2 -->
+    <path d="M 0,200 Q 300,270 600,170 T 1200,210" fill="none" stroke="#c084fc" stroke-width="2.5">
+      <animate attributeName="d" dur="5s" repeatCount="indefinite"
+        values="M 0,200 Q 300,270 600,170 T 1200,210;
+                M 0,200 Q 300,90 600,210 T 1200,170;
+                M 0,200 Q 300,270 600,170 T 1200,210"/>
     </path>
-    <!-- Dynamic Traffic Nodes -->
-    <circle cx="200" cy="120" r="6" fill="#38bdf8">
-      <animate attributeName="r" values="4;9;4" dur="3s" repeatCount="indefinite"/>
+
+    <!-- Dynamic Traffic Load Pulse Beam -->
+    <path d="M 0,160 L 1200,160" fill="none" stroke="url(#pulseGradient)" stroke-width="6" stroke-dasharray="200 1000">
+      <animate attributeName="stroke-dashoffset" values="1200; -1200" dur="3s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Animated Load Injector Nodes -->
+    <circle cx="180" cy="120" r="6" fill="#38bdf8">
+      <animate attributeName="r" values="4;10;4" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="800" cy="220" r="8" fill="#818cf8">
-      <animate attributeName="r" values="5;12;5" dur="4s" repeatCount="indefinite"/>
+
+    <circle cx="600" cy="220" r="8" fill="#818cf8">
+      <animate attributeName="r" values="5;12;5" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3.5s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="1000" cy="100" r="5" fill="#c084fc">
-      <animate attributeName="r" values="3;8;3" dur="2.5s" repeatCount="indefinite"/>
+
+    <circle cx="1020" cy="110" r="7" fill="#c084fc">
+      <animate attributeName="r" values="4;11;4" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
     </circle>
   </g>
 
-  <!-- Foreground Main Card Container (Keeps text clearly visible) -->
-  <rect x="60" y="40" width="1080" height="240" rx="12" fill="#0f172a" fill-opacity="0.7" stroke="#334155" stroke-width="2"/>
+  <!-- Foreground Backdrop Panel (Guarantees crisp text rendering without emojis) -->
+  <rect x="50" y="35" width="1100" height="250" rx="14" fill="#0f172a" fill-opacity="0.82" stroke="#334155" stroke-width="2"/>
 
-  <!-- Foreground Header & Subtitle -->
+  <!-- Main Content Layer -->
   <g text-anchor="middle">
-    <!-- Icon/Badge -->
-    <text x="600" y="105" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" fill="#38bdf8" font-weight="bold">
-      ⚡ 🧪 DISTRIBUTED LOAD TESTING
+    <!-- Category Tag -->
+    <text x="600" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" fill="#38bdf8" font-weight="700" letter-spacing="3">
+      DISTRIBUTED LOAD TESTING ECOSYSTEM
     </text>
-    
-    <!-- Title -->
-    <text x="600" y="165" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="42" fill="url(#accent)" font-weight="900" filter="url(#glow)">
+
+    <!-- Main Title -->
+    <text x="600" y="155" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" fill="url(#titleGradient)" font-weight="900" filter="url(#textGlow)">
       Awesome Distributed Load Testing Solution
     </text>
-    
+
     <!-- Subtitle -->
-    <text x="600" y="215" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" fill="#94a3b8" font-weight="500">
-      Curated Ecosystem of Open-Source Tools & Enterprise Performance Platforms
+    <text x="600" y="205" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" fill="#94a3b8" font-weight="500">
+      Curated Ecosystem of Open-Source Tools &amp; Enterprise Performance Platforms
     </text>
 
-    <!-- Stat Pills in Banner -->
-    <rect x="360" y="240" width="140" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
-    <text x="430" y="259" font-family="sans-serif" font-size="12" fill="#38bdf8" font-weight="600">🚀 Open-Source</text>
+    <!-- Feature Pills -->
+    <!-- Pill 1: Open-Source -->
+    <g transform="translate(340, 235)">
+      <rect x="0" y="0" width="150" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+      <text x="75" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#38bdf8" font-weight="600">Open-Source Tools</text>
+    </g>
 
-    <rect x="530" y="240" width="140" height="28" rx="14" fill="#1e293b" stroke="#818cf8" stroke-width="1"/>
-    <text x="600" y="259" font-family="sans-serif" font-size="12" fill="#818cf8" font-weight="600">☁️ Cloud SaaS</text>
+    <!-- Pill 2: Cloud SaaS -->
+    <g transform="translate(525, 235)">
+      <rect x="0" y="0" width="150" height="32" rx="16" fill="#1e293b" stroke="#818cf8" stroke-width="1.5"/>
+      <text x="75" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#818cf8" font-weight="600">Cloud SaaS Platforms</text>
+    </g>
 
-    <rect x="700" y="240" width="140" height="28" rx="14" fill="#1e293b" stroke="#c084fc" stroke-width="1"/>
-    <text x="770" y="259" font-family="sans-serif" font-size="12" fill="#c084fc" font-weight="600">📊 High-Scale</text>
+    <!-- Pill 3: High Scale -->
+    <g transform="translate(710, 235)">
+      <rect x="0" y="0" width="150" height="32" rx="16" fill="#1e293b" stroke="#c084fc" stroke-width="1.5"/>
+      <text x="75" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#c084fc" font-weight="600">High-Scale Traffic</text>
+    </g>
   </g>
 </svg>
