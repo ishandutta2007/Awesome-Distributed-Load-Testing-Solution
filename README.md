@@ -72,7 +72,7 @@ The distributed load testing market spans **cloud-based load testing platforms**
 
 ## 🔓 Open-Source GitHub Projects 🛠️ 🌐
 
-*Sorted by GitHub Stars_Count (Descending)* 🌟
+*Sorted by GitHub_Stars_Count (Descending)* 🌟
 
 - **[wrk](https://github.com/wg/wrk)** [![Stars](https://img.shields.io/github/stars/wg/wrk?style=social&color=white)](https://github.com/wg/wrk/stargazers) ⚡  
   **Modern HTTP benchmarking tool**, Apache-2.0 licensed. **37K+ GitHub_Stars** — **the most performant HTTP benchmarking tool** . **Lua scripting for custom scenario injection** . **Handles millions of requests per second** on multithreaded architecture . 💥
