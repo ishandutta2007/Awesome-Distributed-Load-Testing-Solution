@@ -30,8 +30,8 @@ Welcome to the ultimate curated directory of **distributed load testing platform
 
 **Key Market Context & Benchmarks:** 📊
 
-- **k6 (by Grafana Labs)** leads modern open-source performance testing with **25K+ GitHub stars**, JavaScript-based scriptable test cases, and seamless Grafana dashboard integration. 🟢
-- **Locust** offers highly scalable Python-native distributed traffic generation with **25K+ GitHub stars** and a real-time monitoring web dashboard. 🦗
+- **k6 (by Grafana Labs)** leads modern open-source performance testing with **25K+ GitHub_Stars**, JavaScript-based scriptable test cases, and seamless Grafana dashboard integration. 🟢
+- **Locust** offers highly scalable Python-native distributed traffic generation with **25K+ GitHub_Stars** and a real-time monitoring web dashboard. 🦗
 - **Gatling** delivers ultra-high-throughput asynchronous load generation via JVM (Scala, Java, Kotlin) DSLs for enterprise microservices. 🎯
 - **wrk & Vegeta** stand out as high-performance CLI benchmarking utilities for HTTP/1.1 and HTTP/2 endpoint stress testing. ⚡
 
@@ -72,46 +72,46 @@ The distributed load testing market spans **cloud-based load testing platforms**
 
 ## 🔓 Open-Source GitHub Projects 🛠️ 🌐
 
-*Sorted by GitHub Star Count (Descending)* 🌟
+*Sorted by GitHub Stars_Count (Descending)* 🌟
 
 - **[wrk](https://github.com/wg/wrk)** [![Stars](https://img.shields.io/github/stars/wg/wrk?style=social&color=white)](https://github.com/wg/wrk/stargazers) ⚡  
-  **Modern HTTP benchmarking tool**, Apache-2.0 licensed. **37K+ GitHub stars** — **the most performant HTTP benchmarking tool** . **Lua scripting for custom scenario injection** . **Handles millions of requests per second** on multithreaded architecture . 💥
+  **Modern HTTP benchmarking tool**, Apache-2.0 licensed. **37K+ GitHub_Stars** — **the most performant HTTP benchmarking tool** . **Lua scripting for custom scenario injection** . **Handles millions of requests per second** on multithreaded architecture . 💥
 
 - **[k6](https://github.com/grafana/k6)** [![Stars](https://img.shields.io/github/stars/grafana/k6?style=social&color=white)](https://github.com/grafana/k6/stargazers) 🟢  
-  **The most modern open-source load testing tool**, AGPL-3.0 licensed. **25K+ GitHub stars** — **JavaScript-based test scripting** . **Native CI/CD integration** with GitHub Actions, GitLab, and Jenkins . **Supports HTTP/1.1, HTTP/2, WebSocket, gRPC, and browser automation** . **Grafana Cloud k6** for cloud-distributed execution . 🚀
+  **The most modern open-source load testing tool**, AGPL-3.0 licensed. **25K+ GitHub_Stars** — **JavaScript-based test scripting** . **Native CI/CD integration** with GitHub Actions, GitLab, and Jenkins . **Supports HTTP/1.1, HTTP/2, WebSocket, gRPC, and browser automation** . **Grafana Cloud k6** for cloud-distributed execution . 🚀
 
 - **[Locust](https://github.com/locustio/locust)** [![Stars](https://img.shields.io/github/stars/locustio/locust?style=social&color=white)](https://github.com/locustio/locust/stargazers) 🦗  
-  **Python-based distributed load testing**, MIT licensed. **25K+ GitHub stars** — **write tests in pure Python code** . **Real-time web UI dashboard** for monitoring and user scaling . **Horizontally scalable** across worker nodes for distributed load generation . 🐍
+  **Python-based distributed load testing**, MIT licensed. **25K+ GitHub_Stars** — **write tests in pure Python code** . **Real-time web UI dashboard** for monitoring and user scaling . **Horizontally scalable** across worker nodes for distributed load generation . 🐍
 
 - **[Vegeta](https://github.com/tsenart/vegeta)** [![Stars](https://img.shields.io/github/stars/tsenart/vegeta?style=social&color=white)](https://github.com/tsenart/vegeta/stargazers) 🌿  
-  **HTTP load testing tool and library**, MIT licensed. **22K+ GitHub stars** — **CLI binary and Go library** . **Targeted constant request rate execution** — **more realistic stress simulation than fixed concurrency** . 📊
+  **HTTP load testing tool and library**, MIT licensed. **22K+ GitHub_Stars** — **CLI binary and Go library** . **Targeted constant request rate execution** — **more realistic stress simulation than fixed concurrency** . 📊
 
 - **[hey](https://github.com/rakyll/hey)** [![Stars](https://img.shields.io/github/stars/rakyll/hey?style=social&color=white)](https://github.com/rakyll/hey/stargazers) 👋  
-  **HTTP load generator**, Apache-2.0 licensed. **18K+ GitHub stars** — **simple, high-speed CLI utility** . Modern replacement for ApacheBench (`ab`) with full HTTP/2 support . ⚡
+  **HTTP load generator**, Apache-2.0 licensed. **18K+ GitHub_Stars** — **simple, high-speed CLI utility** . Modern replacement for ApacheBench (`ab`) with full HTTP/2 support . ⚡
 
 - **[JMeter](https://github.com/apache/jmeter)** [![Stars](https://img.shields.io/github/stars/apache/jmeter?style=social&color=white)](https://github.com/apache/jmeter/stargazers) 🏛️  
-  **The most widely used open-source load testing standard**, Apache-2.0 licensed. **8K+ GitHub stars** — **massive protocol breadth** including HTTP, HTTPS, FTP, JDBC, LDAP, SOAP, and JMS . **GUI and CLI execution modes** with master-slave distributed agent capabilities . 📜
+  **The most widely used open-source load testing standard**, Apache-2.0 licensed. **8K+ GitHub_Stars** — **massive protocol breadth** including HTTP, HTTPS, FTP, JDBC, LDAP, SOAP, and JMS . **GUI and CLI execution modes** with master-slave distributed agent capabilities . 📜
 
 - **[Artillery](https://github.com/artilleryio/artillery)** [![Stars](https://img.shields.io/github/stars/artilleryio/artillery?style=social&color=white)](https://github.com/artilleryio/artillery/stargazers) 🎖️  
-  **Serverless-native load testing framework**, MPL-2.0 licensed. **7K+ GitHub stars** — **YAML/JS-based test definitions** . **Runs natively on AWS Lambda and Fargate** for cloud-scale execution . ☁️
+  **Serverless-native load testing framework**, MPL-2.0 licensed. **7K+ GitHub_Stars** — **YAML/JS-based test definitions** . **Runs natively on AWS Lambda and Fargate** for cloud-scale execution . ☁️
 
 - **[Gatling](https://github.com/gatling/gatling)** [![Stars](https://img.shields.io/github/stars/gatling/gatling?style=social&color=white)](https://github.com/gatling/gatling/stargazers) 🎯  
-  **High-performance asynchronous load testing engine**, Apache-2.0 licensed. **6K+ GitHub stars** — **Scala, Java, and Kotlin DSL** . **Netty/Akka async architecture** capable of simulating huge concurrency with minimal resource footprint . ⚡
+  **High-performance asynchronous load testing engine**, Apache-2.0 licensed. **6K+ GitHub_Stars** — **Scala, Java, and Kotlin DSL** . **Netty/Akka async architecture** capable of simulating huge concurrency with minimal resource footprint . ⚡
 
 - **[Bombardier](https://github.com/codesenberg/bombardier)** [![Stars](https://img.shields.io/github/stars/codesenberg/bombardier?style=social&color=white)](https://github.com/codesenberg/bombardier/stargazers) 💣  
-  **Fast cross-platform HTTP benchmarking tool**, MIT licensed. **6K+ GitHub stars** — **written in Go** . **Supports HTTP/1.1, HTTP/2, and HTTP/3 (QUIC)** . 🚀
+  **Fast cross-platform HTTP benchmarking tool**, MIT licensed. **6K+ GitHub_Stars** — **written in Go** . **Supports HTTP/1.1, HTTP/2, and HTTP/3 (QUIC)** . 🚀
 
 - **[autocannon](https://github.com/mcollina/autocannon)** [![Stars](https://img.shields.io/github/stars/mcollina/autocannon?style=social&color=white)](https://github.com/mcollina/autocannon/stargazers) 🚀  
-  **Fast HTTP/1.1 benchmarking tool written in Node.js**, MIT licensed. **4K+ GitHub stars** — **supports HTTP pipelining** . Written by Node core contributor Matteo Collina . 💥
+  **Fast HTTP/1.1 benchmarking tool written in Node.js**, MIT licensed. **4K+ GitHub_Stars** — **supports HTTP pipelining** . Written by Node core contributor Matteo Collina . 💥
 
 - **[wrk2](https://github.com/giltene/wrk2)** [![Stars](https://img.shields.io/github/stars/giltene/wrk2?style=social&color=white)](https://github.com/giltene/wrk2/stargazers) ⏱️  
-  **Constant throughput HTTP benchmarking tool**, Apache-2.0 licensed. **3.5K+ GitHub stars** — **fork of wrk modified to produce a constant throughput load** and calculate coordinated omission latency histograms . 📈
+  **Constant throughput HTTP benchmarking tool**, Apache-2.0 licensed. **3.5K+ GitHub_Stars** — **fork of wrk modified to produce a constant throughput load** and calculate coordinated omission latency histograms . 📈
 
 - **[Taurus](https://github.com/Blazemeter/taurus)** [![Stars](https://img.shields.io/github/stars/Blazemeter/taurus?style=social&color=white)](https://github.com/Blazemeter/taurus/stargazers) 🐂  
-  **Automation-friendly test automation framework**, Apache-2.0 licensed. **2K+ GitHub stars** — **unified YAML wrapper for JMeter, Gatling, Locust, and Selenium** . 🤖
+  **Automation-friendly test automation framework**, Apache-2.0 licensed. **2K+ GitHub_Stars** — **unified YAML wrapper for JMeter, Gatling, Locust, and Selenium** . 🤖
 
 - **[Drill](https://github.com/fcsonline/drill)** [![Stars](https://img.shields.io/github/stars/fcsonline/drill?style=social&color=white)](https://github.com/fcsonline/drill/stargazers) 🔩  
-  **Rust-based HTTP load testing application**, GPL-3.0 licensed. **1K+ GitHub stars** — **YAML test scenarios** leveraging Rust's memory efficiency and performance . 🦀
+  **Rust-based HTTP load testing application**, GPL-3.0 licensed. **1K+ GitHub_Stars** — **YAML test scenarios** leveraging Rust's memory efficiency and performance . 🦀
 
 - **[Nighthawk](https://github.com/envoyproxy/nighthawk)** [![Stars](https://img.shields.io/github/stars/envoyproxy/nighthawk?style=social&color=white)](https://github.com/envoyproxy/nighthawk/stargazers) 🦅  
   **L7 load testing tool from Envoy Proxy**, Apache-2.0 licensed. **Distributed load generation using Envoy core components** for realistic service mesh traffic simulation . 🌐
@@ -151,7 +151,7 @@ If you find this distributed load testing repository useful, please consider sup
 ## ⚠️ Disclaimer ℹ️
 
 - This is a **community-curated** list — not exhaustive and not an official endorsement. ℹ️
-- **k6 and Locust lead modern open-source distributed testing** with **25K+ GitHub stars**, while **wrk** leads raw HTTP throughput benchmarking with **37K+ stars**. ⚡
+- **k6 and Locust lead modern open-source distributed testing** with **25K+ GitHub_Stars**, while **wrk** leads raw HTTP throughput benchmarking with **37K+ stars**. ⚡
 - **Commercial SaaS offerings** range from **$39/month** (Flood.io) to **$287/month** (LoadNinja) and enterprise licenses starting around **$20K/year** (NeoLoad, Gatling Enterprise).
 - Always validate test scenarios, injector network limitations, and result accuracy with proof-of-concept tests before conducting full production stress tests. 🧪
 
